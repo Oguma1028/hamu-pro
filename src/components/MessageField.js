@@ -8,6 +8,7 @@ const MessageField = ({ name, text, setText }) => {
     <>
       <TextField
         fullWidth={true}
+        autoFocus={true}
         onChange={(e) => setText(e.target.value)}
         onKeyDown={(e) => {
           const text = e.target.value;
