@@ -33,8 +33,6 @@ export default function SignIn({ setName }) {
   const [string, setString] = useState("");
   const [isComposed, setIsComposed] = useState(false);
 
-  console.log(isComposed);
-
   useEffect(() => {
     const disable = string === "";
     setDisabled(disable);
@@ -57,6 +55,7 @@ export default function SignIn({ setName }) {
         <Box component="form" noValidate sx={{ mt: 1 }}>
           <TextField
             margin="normal"
+            variant={"filled"}
             required
             fullWidth
             id="name"
